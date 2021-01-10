@@ -94,16 +94,25 @@ main div.feature {
     box-sizing: border-box;
     display: inline-block;
     width: calc(80%/3);
-    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    border: 1px solid rgba(0, 0, 0, 0.2);
     margin-left: 5%;
-    background-color: rgba(0, 0, 0, 0.02);
+    /* background-color: rgba(0, 0, 0, 0.02); */
+}
+
+main div.feature div {
+    transition: 1s;
+}
+
+main div.feature:hover div {
+    background-size: 120%;
+
 }
 
 main div.image1 {
     height: 200px;
     margin: 20px 30px;
     background-image: url(toolbox-2645700_1280.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -111,7 +120,7 @@ main div.image2 {
     height: 200px;
     margin: 20px 30px;
     background-image: url(master-1904748_1280.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
@@ -119,7 +128,7 @@ main div.image3 {
     height: 200px;
     margin: 20px 30px;
     background-image: url(trapped-1582002_1280.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
