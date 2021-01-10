@@ -1,0 +1,141 @@
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /*    box-sizing: border-box;*/
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Nawigacja*/
+
+nav {
+    max-width: 1440px;
+    margin: 30px auto;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #555;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+nav a.reservation {
+    padding: 10px 30px;
+    border: 2px solid #555;
+    margin-right: 50px;
+    margin-left: 80px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #555;
+    color: #000;
+}
+
+nav a.reservation:hover {
+    background-color: royalblue;
+    color: #eee;
+    border-color: royalblue;
+}
+
+/*Header*/
+
+header {
+    height: 40vh;
+    background-image: url(auto2.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+    line-height: 40vh;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+/*Main*/
+
+main {
+    max-width: 1440px;
+    margin: 5vh auto;
+    font-size: 0;
+}
+
+main p.description {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0 30px 10vh 30px;
+    line-height: 180%;
+}
+
+/* main section.features {
+    border-top: 2px solid black;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+} */
+
+main div.feature {
+    box-sizing: border-box;
+    display: inline-block;
+    width: calc(80%/3);
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+main div.image1 {
+    height: 200px;
+    margin: 20px 30px;
+    background-image: url(toolbox-2645700_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main div.image2 {
+    height: 200px;
+    margin: 20px 30px;
+    background-image: url(master-1904748_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main div.image3 {
+    height: 200px;
+    margin: 20px 30px;
+    background-image: url(trapped-1582002_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+    padding-bottom: 10px;
+}
+
+/*Stopka*/
+
+footer p {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+}
