@@ -94,9 +94,12 @@ main div.feature {
 
 main div.feature div {
     height: 200px;
-    margin: 20px 30px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
+    background-clip: content-box;
     transition: 1s;
 }
 
@@ -121,7 +124,7 @@ main h2 {
     font-size: 2rem;
     text-align: center;
     color: #222;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 /*Stopka*/
