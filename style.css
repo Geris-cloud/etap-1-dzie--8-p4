@@ -80,15 +80,9 @@ main {
 main p.description {
     font-size: 2.2rem;
     text-align: center;
-    margin: 0 30px 10vh 30px;
+    margin: 5vh 30px;
     line-height: 180%;
 }
-
-/* main section.features {
-    border-top: 2px solid black;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-} */
 
 main div.feature {
     box-sizing: border-box;
@@ -96,10 +90,13 @@ main div.feature {
     width: calc(80%/3);
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin-left: 5%;
-    /* background-color: rgba(0, 0, 0, 0.02); */
 }
 
 main div.feature div {
+    height: 200px;
+    margin: 20px 30px;
+    background-size: 100%;
+    background-position: center;
     transition: 1s;
 }
 
@@ -109,27 +106,15 @@ main div.feature:hover div {
 }
 
 main div.image1 {
-    height: 200px;
-    margin: 20px 30px;
     background-image: url(toolbox-2645700_1280.jpg);
-    background-size: 100%;
-    background-position: center;
 }
 
 main div.image2 {
-    height: 200px;
-    margin: 20px 30px;
     background-image: url(master-1904748_1280.jpg);
-    background-size: 100%;
-    background-position: center;
 }
 
 main div.image3 {
-    height: 200px;
-    margin: 20px 30px;
     background-image: url(trapped-1582002_1280.jpg);
-    background-size: 100%;
-    background-position: center;
 }
 
 main h2 {
