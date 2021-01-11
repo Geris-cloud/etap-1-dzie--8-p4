@@ -100,11 +100,13 @@ main div.feature div {
     background-position: center;
     background-repeat: no-repeat;
     background-clip: content-box;
+    opacity: 0.85;
     transition: 1s;
 }
 
 main div.feature:hover div {
     background-size: 120%;
+    opacity: 1;
 
 }
 
