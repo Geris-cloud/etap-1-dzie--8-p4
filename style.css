@@ -57,7 +57,7 @@ nav a.reservation:hover {
 
 header {
     height: 40vh;
-    background-image: url(auto2.jpg);
+    background-image: url(pictures/auto2.jpg);
     background-size: cover;
 }
 
@@ -111,15 +111,15 @@ main div.feature:hover div {
 }
 
 main div.image1 {
-    background-image: url(toolbox-2645700_1280.jpg);
+    background-image: url(pictures/toolbox-2645700_1280.jpg);
 }
 
 main div.image2 {
-    background-image: url(master-1904748_1280.jpg);
+    background-image: url(pictures/master-1904748_1280.jpg);
 }
 
 main div.image3 {
-    background-image: url(trapped-1582002_1280.jpg);
+    background-image: url(pictures/trapped-1582002_1280.jpg);
 }
 
 main h2 {
