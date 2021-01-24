@@ -14,14 +14,21 @@ html {
 }
 
 /*Nawigacja*/
+nav.hamburger i {
+    display: none;
+}
 
-nav {
+nav.hamburger div {
+    display: none;
+}
+
+nav.pc {
     max-width: 1440px;
     margin: 30px auto;
     text-align: right;
 }
 
-nav a {
+nav.pc a {
     display: inline-block;
     font-size: 1.8rem;
     font-family: 'Roboto Condensed', sans-serif;
@@ -32,7 +39,7 @@ nav a {
     margin: 0 20px;
 }
 
-nav a.reservation {
+nav.pc a.reservation {
     padding: 10px 30px;
     border: 2px solid #555;
     margin-right: 50px;
@@ -42,15 +49,50 @@ nav a.reservation {
     transition: 0.2s;
 }
 
-nav a:hover {
+nav.pc a:hover {
     border-bottom: 2px solid #555;
     color: #000;
 }
 
-nav a.reservation:hover {
+nav.pc a.reservation:hover {
     background-color: royalblue;
     color: #eee;
     border-color: royalblue;
+}
+
+@media (max-width: 900px) {
+    nav.pc a {
+        font-size: 1.6rem;
+        margin: 0 10px;
+    }
+
+    nav.pc a.reservation {
+        margin-right: 20px;
+        margin-left: 50px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 690px) {
+    nav.pc {
+        display: none;
+    }
+
+    nav.hamburger i {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #000;
+        font-size: 20px;
+
+    }
+
+
 }
 
 /*Header*/
@@ -67,6 +109,36 @@ header h1 {
     text-align: center;
     line-height: 40vh;
     background-color: rgba(0, 0, 0, 0.5)
+}
+
+@media (max-width: 510px) {
+    header {
+        height: 60vh;
+    }
+
+    header h1 {
+        padding-top: 10vh;
+        font-size: 8rem;
+        line-height: 25vh;
+    }
+}
+
+@media (max-width: 388px) {
+    header {
+        height: 60vh;
+    }
+
+    header h1 {
+        padding-top: 0;
+        font-size: 8rem;
+        line-height: 20vh;
+    }
+}
+
+@media (max-width: 294px) {
+    header h1 {
+        font-size: 6rem;
+    }
 }
 
 /*Main*/
@@ -107,7 +179,6 @@ main div.feature div {
 main div.feature:hover div {
     background-size: 120%;
     opacity: 1;
-
 }
 
 main div.image1 {
@@ -129,6 +200,71 @@ main h2 {
     padding-bottom: 15px;
 }
 
+@media (max-width: 1024px) {
+    main div.feature div {
+        background-size: 140%;
+    }
+
+    main div.feature:hover div {
+        background-size: 140%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    main {
+        margin: 3vh auto 10vh auto;
+    }
+
+    main p.description {
+        font-size: 1.8rem;
+        margin: 3vh 30px;
+    }
+
+    main div.feature div {
+        background-size: cover;
+        opacity: 1;
+    }
+
+    main div.feature:hover div {
+        background-size: cover;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main div.feature {
+        display: block;
+        width: 80%;
+        margin: 3vh auto;
+    }
+}
+
+@media (max-width: 510px) {
+    main div.feature {
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    main {
+        margin: 2vh auto 7vh auto;
+    }
+
+    main p.description {
+        font-size: 1.7rem;
+        margin: 2vh 30px;
+    }
+
+    main div.feature {
+        margin: 2vh auto;
+    }
+}
+
+
 /*Stopka*/
 
 footer p {
@@ -137,4 +273,35 @@ footer p {
     text-align: center;
     padding: 2rem 0;
     font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+    footer p {
+        font-size: 1.6rem;
+        line-height: 8vh;
+    }
+}
+
+@media (max-width: 768px) {
+    footer p {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        line-height: normal;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 510px) {
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 340px) {
+    footer p {
+        font-size: 0.8rem;
+    }
 }
