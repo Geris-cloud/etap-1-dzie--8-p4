@@ -8,11 +8,6 @@ const hamburgerObjectReservation = document.querySelector('.reservationtwo');
 
 function pullMenu() {
     hamburgerMenu.classList.toggle('pull');
-    hamburgerObjectOne.classList.toggle('pull');
-    hamburgerObjectTwo.classList.toggle('pull');
-    hamburgerObjectThree.classList.toggle('pull');
-    hamburgerObjectFour.classList.toggle('pull');
-    hamburgerObjectReservation.classList.toggle('pull');
 }
 
 hamburgerIcon.addEventListener('click', pullMenu);

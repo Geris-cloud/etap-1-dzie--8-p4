@@ -91,27 +91,31 @@ nav.pc a.reservation:hover {
         font-size: 30px;
         cursor: pointer;
         z-index: 2;
-    }
-
-    nav.hamburger div {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
         transition: 0.2s linear;
     }
 
-    nav.hamburger div.pull {
+    nav.hamburger div {
         display: block;
+        position: fixed;
+        top: calc((-89px) + (-50vh));
         width: 100%;
         height: calc(60px + 16px + 50vh);
         padding: 5px 0;
         border-bottom: 3px solid #000;
         background-color: #fff;
+        transition: 0.2s linear;
     }
 
-    nav.hamburger div a.pull {
+    nav.hamburger div.pull {
+        top: 0;
+
+    }
+
+    nav.hamburger div.pull+i {
+        transform: rotate(180deg);
+    }
+
+    nav.hamburger div a {
         display: block;
         width: 50%;
         text-align: center;
