@@ -1,18 +1,4 @@
-const hamburgerIcon = document.querySelector('nav.hamburger i');
+const hamburgerObjects = [...document.querySelectorAll('nav.hamburger i, div.menu a')];
 const hamburgerMenu = document.querySelector('nav div.menu');
-const hamburgerObjectOne = document.querySelector('.one');
-const hamburgerObjectTwo = document.querySelector('.two');
-const hamburgerObjectThree = document.querySelector('.three');
-const hamburgerObjectFour = document.querySelector('.four');
-const hamburgerObjectReservation = document.querySelector('.reservationtwo');
 
-function pullMenu() {
-    hamburgerMenu.classList.toggle('pull');
-}
-
-hamburgerIcon.addEventListener('click', pullMenu);
-hamburgerObjectOne.addEventListener('click', pullMenu);
-hamburgerObjectTwo.addEventListener('click', pullMenu);
-hamburgerObjectThree.addEventListener('click', pullMenu);
-hamburgerObjectFour.addEventListener('click', pullMenu);
-hamburgerObjectReservation.addEventListener('click', pullMenu);
+hamburgerObjects.forEach((item) => item.addEventListener('click', () => hamburgerMenu.classList.toggle('pull')));
